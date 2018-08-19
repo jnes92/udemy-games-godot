@@ -1,4 +1,21 @@
-# udemy-games-godot
+# UDEMY-Games-GoDot
+
+## Table of contents:
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+* [UDEMY-Games-GoDot](#udemy-games-godot)
+	* [Table of contents:](#table-of-contents)
+	* [Learning Log - Section 1:](#learning-log-section-1)
+		* [103: Installing GoDot](#103-installing-godot)
+		* [105: Hello GoDot.](#105-hello-godot)
+	* [Learing Log - Section 2: Loony Lips](#learing-log-section-2-loony-lips)
+		* [207: Game Requirements](#207-game-requirements)
+		* [208: Introducing Arrays](#208-introducing-arrays)
+
+<!-- /code_chunk_output -->
+
 
 ## Learning Log - Section 1:
 
@@ -34,4 +51,21 @@ Python:
 - no curly braces {}, instead use tab indentions
 
 Others:
-- cool theme "Alien": Editor Settings -> Theme
+- cool theme "Alien": Editor Settings -> Theme 
+
+
+
+## Learing Log - Section 2: Loony Lips 
+
+### 207: Game Requirements
+
+a word game
+- ask for a word based on type (nouns, verb,etc)
+- stories to plug the words into
+    - expandable template for stories
+
+### 208: Introducing Arrays
+
+- node Convention is CamelCase
+- string escaping with "%s" : for strings.
+`print(story % prompt)`
