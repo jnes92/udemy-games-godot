@@ -45,7 +45,7 @@ Kurs gestartet am 19.08.2018
 	- [x] Lektion 17
 	- [x] Lektion 18
 	- [x] Lektion 19
-	- [ ] Lektion 20
+	- [x] Lektion 20
     - [ ] Lektion 21
 	- [ ] Lektion 22
 
