@@ -8,10 +8,11 @@
 	- [Section 1](#section-1)
 		- [103: Installing GoDot](#103-installing-godot)
 		- [105: Hello GoDot.](#105-hello-godot)
-	- [Learning Log - Section 2: Loony Lips](#learning-log---section-2-loony-lips)
+	- [Section 2: Loony Lips](#section-2-loony-lips)
 		- [207: Game Requirements](#207-game-requirements)
 		- [208: Introducing Arrays](#208-introducing-arrays)
 		- [209: RichTextLabel](#209-richtextlabel)
+		- [210: LineEdit](#210-lineedit)
 
 <!-- /code_chunk_output -->
 
@@ -56,7 +57,7 @@ Others:
 
 
 
-## Learning Log - Section 2: Loony Lips 
+## Section 2: Loony Lips 
 
 ### 207: Game Requirements 
 *(19.08.2018)*
@@ -83,3 +84,16 @@ a word game
 
 - `get_node(Blackboard/StoryText)`  = `$Blackboard/StoryText` 
 - RichTextLabel´s input can be controlled via `.text` and `bbcode_text` (*bbcode_text* can be bold, italic, etc..)
+
+### 210: LineEdit
+
+- Node: TextEdit is good for user input with multiple lines
+- Node: LineEdit : single line text editing
+- Instead of creating small scripts for each subnode, we acn use **signals**
+- Signals can be created inside the script or from the *node inspector* (bottom right). select *text_entered* and click *connect* 
+- TextureButton
+- you can lock nodes to not move children nodes without purpose.
+
+Created two signals in script:
+- `func _on_TextureButton_pressed():`
+- `func _on_TextBox_text_entered(new_text):`
