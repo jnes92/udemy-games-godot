@@ -9,9 +9,11 @@ public class LoonyLips : Node2D
 
     public override void _Ready()
     {
-        // Called every time the node is added to the scene.
-        // Initialization here
-        
+       var storyText = FindNode("StoryText") as RichTextLabel;
+       storyText.Text = "It worked...";
+
+       var textEntryBox = FindNode("TextBox") as LineEdit;
+       textEntryBox.Text = "Changed Input Text";
     }
 
 //    public override void _Process(float delta)

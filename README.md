@@ -3,24 +3,25 @@
 
 <!-- code_chunk_output -->
 
-- [Table of contents:](#table-of-contents)
-- [Overview](#overview)
-- [Learning Log](#learning-log)
-	- [Section 1](#section-1)
-		- [103: Installing GoDot](#103-installing-godot)
-		- [105: Hello GoDot.](#105-hello-godot)
-	- [Section 2: Loony Lips](#section-2-loony-lips)
-		- [207: Game Requirements](#207-game-requirements)
-		- [208: Introducing Arrays](#208-introducing-arrays)
-		- [209: RichTextLabel](#209-richtextlabel)
-		- [210: LineEdit](#210-lineedit)
-		- [211: Using Player´s Input](#211-using-player%C2%B4s-input)
-		- [212: queue_free and reload_current_scene](#212-queuefree-and-reloadcurrentscene)
-		- [213: Dictionaries for Story Templates](#213-dictionaries-for-story-templates)
-		- [214: JSON and File](#214-json-and-file)
-		- [215: Using Git with GoDot](#215-using-git-with-godot)
-		- [216: Visual Studio Code](#216-visual-studio-code)
-		- [217: Godot Mono for C](#217-godot-mono-for-c)
+* [Table of contents:](#table-of-contents)
+* [Overview](#overview)
+* [Learning Log](#learning-log)
+	* [Section 1](#section-1)
+		* [103: Installing GoDot](#103-installing-godot)
+		* [105: Hello GoDot.](#105-hello-godot)
+	* [Section 2: Loony Lips](#section-2-loony-lips)
+		* [207: Game Requirements](#207-game-requirements)
+		* [208: Introducing Arrays](#208-introducing-arrays)
+		* [209: RichTextLabel](#209-richtextlabel)
+		* [210: LineEdit](#210-lineedit)
+		* [211: Using Player´s Input](#211-using-player-́s-input)
+		* [212: queue_free and reload_current_scene](#212-queue_free-and-reload_current_scene)
+		* [213: Dictionaries for Story Templates](#213-dictionaries-for-story-templates)
+		* [214: JSON and File](#214-json-and-file)
+		* [215: Using Git with GoDot](#215-using-git-with-godot)
+		* [216: Visual Studio Code](#216-visual-studio-code)
+		* [217: Godot Mono for C#](#217-godot-mono-for-c)
+		* [218: Finding Nodes with C#](#218-finding-nodes-with-c)
 
 <!-- /code_chunk_output -->
 
@@ -174,3 +175,9 @@ Created two signals in script:
 ### 217: Godot Mono for C#
 
 * Current Mono 3.0.6 needs Mono SDK 5.12.0
+
+### 218: Finding Nodes with C# 
+
+* Find Nodes: `textBox = FindNode("TextBox") as LineEdit`
+  * returns node, so cast it to specific node.
+  * parameter: Node name (string)
