@@ -3,16 +3,17 @@
 
 <!-- code_chunk_output -->
 
-- [Table of contents:](#table-of-contents)
-- [Learning Log](#learning-log)
-	- [Section 1](#section-1)
-		- [103: Installing GoDot](#103-installing-godot)
-		- [105: Hello GoDot.](#105-hello-godot)
-	- [Section 2: Loony Lips](#section-2-loony-lips)
-		- [207: Game Requirements](#207-game-requirements)
-		- [208: Introducing Arrays](#208-introducing-arrays)
-		- [209: RichTextLabel](#209-richtextlabel)
-		- [210: LineEdit](#210-lineedit)
+* [Table of contents:](#table-of-contents)
+* [Learning Log](#learning-log)
+	* [Section 1](#section-1)
+		* [103: Installing GoDot](#103-installing-godot)
+		* [105: Hello GoDot.](#105-hello-godot)
+	* [Section 2: Loony Lips](#section-2-loony-lips)
+		* [207: Game Requirements](#207-game-requirements)
+		* [208: Introducing Arrays](#208-introducing-arrays)
+		* [209: RichTextLabel](#209-richtextlabel)
+		* [210: LineEdit](#210-lineedit)
+		* [211: Using Player´s Input](#211-using-player-́s-input)
 
 <!-- /code_chunk_output -->
 
@@ -97,3 +98,8 @@ a word game
 Created two signals in script:
 - `func _on_TextureButton_pressed():`
 - `func _on_TextBox_text_entered(new_text):`
+
+### 211: Using Player´s Input
+
+- if statements in python
+- `if thing > 0 : ` `elif anothercondition` `else dothis`  
