@@ -1,25 +1,25 @@
-# UDEMY-Games-GoDot
-
-## Table of contents:
+# Table of contents:
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-* [UDEMY-Games-GoDot](#udemy-games-godot)
-	* [Table of contents:](#table-of-contents)
-	* [Learning Log - Section 1:](#learning-log-section-1)
-		* [103: Installing GoDot](#103-installing-godot)
-		* [105: Hello GoDot.](#105-hello-godot)
-	* [Learing Log - Section 2: Loony Lips](#learing-log-section-2-loony-lips)
-		* [207: Game Requirements](#207-game-requirements)
-		* [208: Introducing Arrays](#208-introducing-arrays)
+- [Table of contents:](#table-of-contents)
+- [Learning Log](#learning-log)
+	- [Section 1](#section-1)
+		- [103: Installing GoDot](#103-installing-godot)
+		- [105: Hello GoDot.](#105-hello-godot)
+	- [Learning Log - Section 2: Loony Lips](#learning-log---section-2-loony-lips)
+		- [207: Game Requirements](#207-game-requirements)
+		- [208: Introducing Arrays](#208-introducing-arrays)
+		- [209: RichTextLabel](#209-richtextlabel)
 
 <!-- /code_chunk_output -->
 
+# Learning Log
+## Section 1 
+### 103: Installing GoDot 
+*(19.08.2018)*
 
-## Learning Log - Section 1:
-
-### 103: Installing GoDot
 
 Verfügbar für:
 - Windows
@@ -32,7 +32,8 @@ Versionen:
 - Python Script
 - C# Support with Mono.
 
-### 105: Hello GoDot.
+### 105: Hello GoDot. 
+*(19.08.2018)*
 
 GoDot related: (GDScript)
 
@@ -55,17 +56,30 @@ Others:
 
 
 
-## Learing Log - Section 2: Loony Lips 
+## Learning Log - Section 2: Loony Lips 
 
-### 207: Game Requirements
+### 207: Game Requirements 
+*(19.08.2018)*
 
 a word game
 - ask for a word based on type (nouns, verb,etc)
 - stories to plug the words into
     - expandable template for stories
 
-### 208: Introducing Arrays
+### 208: Introducing Arrays 
+*(19.08.2018)*
 
 - node Convention is CamelCase
 - string escaping with "%s" : for strings.
 `print(story % prompt)`
+
+### 209: RichTextLabel 
+*(19.08.2018)*
+
+- every scene has one "root" node (only access via code)
+- in the scene editor you can only see the oldest parent node
+- TextureRect node is for showing images
+- project settings -> Display - Window to resize player camera size
+
+- `get_node(Blackboard/StoryText)`  = `$Blackboard/StoryText` 
+- RichTextLabel´s input can be controlled via `.text` and `bbcode_text` (*bbcode_text* can be bold, italic, etc..)
