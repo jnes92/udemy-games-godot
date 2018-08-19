@@ -1,0 +1,19 @@
+[
+    {
+        "prompt": [
+            "a name",
+            "a job title",
+            "a character property",
+            "an enemy"
+        ],
+        "story": "Once upon a time a Hero called %s wanted to marry the %s, but therefore he needed a lot more %s, so he needed to fight against a %s"
+    },
+    {
+        "prompt": [
+            "a famous person",
+            "a verb",
+            "another verb"
+        ],
+        "story": "Yesterday I have seen %s on the street. But you will not imagine what he %s. It was so suprising to all the peoples around. And even better, afterwards he %s."
+    }
+]

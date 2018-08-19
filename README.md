@@ -3,26 +3,56 @@
 
 <!-- code_chunk_output -->
 
-* [Table of contents:](#table-of-contents)
-* [Learning Log](#learning-log)
-	* [Section 1](#section-1)
-		* [103: Installing GoDot](#103-installing-godot)
-		* [105: Hello GoDot.](#105-hello-godot)
-	* [Section 2: Loony Lips](#section-2-loony-lips)
-		* [207: Game Requirements](#207-game-requirements)
-		* [208: Introducing Arrays](#208-introducing-arrays)
-		* [209: RichTextLabel](#209-richtextlabel)
-		* [210: LineEdit](#210-lineedit)
-		* [211: Using Player´s Input](#211-using-player-́s-input)
-		* [212: queue_free and reload_current_scene](#212-queue_free-and-reload_current_scene)
-		* [213: Dictionaries for Story Templates](#213-dictionaries-for-story-templates)
+- [Table of contents:](#table-of-contents)
+- [Overview](#overview)
+- [Learning Log](#learning-log)
+	- [Section 1](#section-1)
+		- [103: Installing GoDot](#103-installing-godot)
+		- [105: Hello GoDot.](#105-hello-godot)
+	- [Section 2: Loony Lips](#section-2-loony-lips)
+		- [207: Game Requirements](#207-game-requirements)
+		- [208: Introducing Arrays](#208-introducing-arrays)
+		- [209: RichTextLabel](#209-richtextlabel)
+		- [210: LineEdit](#210-lineedit)
+		- [211: Using Player´s Input](#211-using-player%C2%B4s-input)
+		- [212: queue_free and reload_current_scene](#212-queuefree-and-reloadcurrentscene)
+		- [213: Dictionaries for Story Templates](#213-dictionaries-for-story-templates)
+		- [214: JSON and File](#214-json-and-file)
 
 <!-- /code_chunk_output -->
+
+# Overview
+
+Kurs gestartet am 19.08.2018
+
+- [x] Section 1: 19.08.2018
+	- [x] Lektion 1
+	- [x] Lektion 2 
+	- [x] Lektion 3
+	- [x] Lektion 4
+	- [x] Lektion 5
+	- [x] Lektion 6
+- [ ] Section 2: 19.08.2018
+	- [x] Lektion 7
+	- [x] Lektion 8
+	- [x] Lektion 9
+	- [x] Lektion 10
+	- [x] Lektion 11 
+	- [x] Lektion 12
+	- [x] Lektion 13
+	- [x] Lektion 14 
+	- [ ] Lektion 15
+	- [ ] Lektion 16
+	- [ ] Lektion 17
+	- [ ] Lektion 18
+	- [ ] Lektion 19
+	- [ ] Lektion 20
+	- [ ] Lektion 21
+	- [ ] Lektion 22
 
 # Learning Log
 ## Section 1 
 ### 103: Installing GoDot 
-*(19.08.2018)*
 
 
 Verfügbar für:
@@ -37,7 +67,6 @@ Versionen:
 - C# Support with Mono.
 
 ### 105: Hello GoDot. 
-*(19.08.2018)*
 
 GoDot related: (GDScript)
 
@@ -63,7 +92,6 @@ Others:
 ## Section 2: Loony Lips 
 
 ### 207: Game Requirements 
-*(19.08.2018)*
 
 a word game
 - ask for a word based on type (nouns, verb,etc)
@@ -71,14 +99,12 @@ a word game
     - expandable template for stories
 
 ### 208: Introducing Arrays 
-*(19.08.2018)*
 
 - node Convention is CamelCase
 - string escaping with "%s" : for strings.
 `print(story % prompt)`
 
 ### 209: RichTextLabel 
-*(19.08.2018)*
 
 - every scene has one "root" node (only access via code)
 - in the scene editor you can only see the oldest parent node
@@ -117,3 +143,15 @@ Created two signals in script:
 - `randomize()` will create a random seed
 - `randi()` will create a random number (integer)
 - needs to be between 0 and array length -> 
+
+### 214: JSON and File
+
+- seperates object to *key* and *value*
+- To read a file and convert it to json
+	- `var file = File.new()`
+	- `file.open(filename, File.READ)`
+	- `var text = file.get_as_text()`
+	- `var data = parse_json(text)`
+	- `file.close()` - remember to close filestreams to prevent memory leaks.
+	- `return data`
+- very nice for localization.
