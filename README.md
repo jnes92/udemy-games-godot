@@ -3,25 +3,26 @@
 
 <!-- code_chunk_output -->
 
-* [Table of contents:](#table-of-contents)
-* [Overview](#overview)
-* [Learning Log](#learning-log)
-	* [Section 1](#section-1)
-		* [103: Installing GoDot](#103-installing-godot)
-		* [105: Hello GoDot.](#105-hello-godot)
-	* [Section 2: Loony Lips](#section-2-loony-lips)
-		* [207: Game Requirements](#207-game-requirements)
-		* [208: Introducing Arrays](#208-introducing-arrays)
-		* [209: RichTextLabel](#209-richtextlabel)
-		* [210: LineEdit](#210-lineedit)
-		* [211: Using Player´s Input](#211-using-player-́s-input)
-		* [212: queue_free and reload_current_scene](#212-queue_free-and-reload_current_scene)
-		* [213: Dictionaries for Story Templates](#213-dictionaries-for-story-templates)
-		* [214: JSON and File](#214-json-and-file)
-		* [215: Using Git with GoDot](#215-using-git-with-godot)
-		* [216: Visual Studio Code](#216-visual-studio-code)
-		* [217: Godot Mono for C#](#217-godot-mono-for-c)
-		* [218: Finding Nodes with C#](#218-finding-nodes-with-c)
+- [Table of contents:](#table-of-contents)
+- [Overview](#overview)
+- [Learning Log](#learning-log)
+	- [Section 1](#section-1)
+		- [103: Installing GoDot](#103-installing-godot)
+		- [105: Hello GoDot.](#105-hello-godot)
+	- [Section 2: Loony Lips](#section-2-loony-lips)
+		- [207: Game Requirements](#207-game-requirements)
+		- [208: Introducing Arrays](#208-introducing-arrays)
+		- [209: RichTextLabel](#209-richtextlabel)
+		- [210: LineEdit](#210-lineedit)
+		- [211: Using Player´s Input](#211-using-player%C2%B4s-input)
+		- [212: queue_free and reload_current_scene](#212-queuefree-and-reloadcurrentscene)
+		- [213: Dictionaries for Story Templates](#213-dictionaries-for-story-templates)
+		- [214: JSON and File](#214-json-and-file)
+		- [215: Using Git with GoDot](#215-using-git-with-godot)
+		- [216: Visual Studio Code](#216-visual-studio-code)
+		- [217: Godot Mono for C](#217-godot-mono-for-c)
+		- [218: Finding Nodes with C#](#218-finding-nodes-with-c)
+		- [219: Wiring Signals with C](#219-wiring-signals-with-c)
 
 <!-- /code_chunk_output -->
 
@@ -30,13 +31,7 @@
 Kurs gestartet am 19.08.2018
 
 * [x] Section 1: 19.08.2018
-    - [x] Lektion 1
-    - [x] Lektion 2 
-	- [x] Lektion 3  
-	- [x] Lektion 4
-	- [x] Lektion 5
-	- [x] Lektion 6
-- [ ] Section 2: 19.08.2018
+* [ ] Section 2: 19.08.2018
 	- [x] Lektion 7
 	- [x] Lektion 8
 	- [x] Lektion 9
@@ -48,8 +43,8 @@ Kurs gestartet am 19.08.2018
 	- [x] Lektion 15
 	- [x] Lektion 16
 	- [x] Lektion 17
-	- [ ] Lektion 18
-	- [ ] Lektion 19
+	- [x] Lektion 18
+	- [x] Lektion 19
 	- [ ] Lektion 20
     - [ ] Lektion 21
 	- [ ] Lektion 22
@@ -181,3 +176,10 @@ Created two signals in script:
 * Find Nodes: `textBox = FindNode("TextBox") as LineEdit`
   * returns node, so cast it to specific node.
   * parameter: Node name (string)
+
+### 219: Wiring Signals with C#
+
+* Disconnect old signal and click reconnect
+* create functions is not working currently with c#, so copy name
+* signal functions are not public or private... :D
+* *cached reference* for storing nodes in c#
