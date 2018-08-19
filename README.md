@@ -3,21 +3,22 @@
 
 <!-- code_chunk_output -->
 
-- [Table of contents:](#table-of-contents)
-- [Overview](#overview)
-- [Learning Log](#learning-log)
-	- [Section 1](#section-1)
-		- [103: Installing GoDot](#103-installing-godot)
-		- [105: Hello GoDot.](#105-hello-godot)
-	- [Section 2: Loony Lips](#section-2-loony-lips)
-		- [207: Game Requirements](#207-game-requirements)
-		- [208: Introducing Arrays](#208-introducing-arrays)
-		- [209: RichTextLabel](#209-richtextlabel)
-		- [210: LineEdit](#210-lineedit)
-		- [211: Using Player´s Input](#211-using-player%C2%B4s-input)
-		- [212: queue_free and reload_current_scene](#212-queuefree-and-reloadcurrentscene)
-		- [213: Dictionaries for Story Templates](#213-dictionaries-for-story-templates)
-		- [214: JSON and File](#214-json-and-file)
+* [Table of contents:](#table-of-contents)
+* [Overview](#overview)
+* [Learning Log](#learning-log)
+	* [Section 1](#section-1)
+		* [103: Installing GoDot](#103-installing-godot)
+		* [105: Hello GoDot.](#105-hello-godot)
+	* [Section 2: Loony Lips](#section-2-loony-lips)
+		* [207: Game Requirements](#207-game-requirements)
+		* [208: Introducing Arrays](#208-introducing-arrays)
+		* [209: RichTextLabel](#209-richtextlabel)
+		* [210: LineEdit](#210-lineedit)
+		* [211: Using Player´s Input](#211-using-player-́s-input)
+		* [212: queue_free and reload_current_scene](#212-queue_free-and-reload_current_scene)
+		* [213: Dictionaries for Story Templates](#213-dictionaries-for-story-templates)
+		* [214: JSON and File](#214-json-and-file)
+		* [215: Using Git with GoDot](#215-using-git-with-godot)
 
 <!-- /code_chunk_output -->
 
@@ -28,7 +29,7 @@ Kurs gestartet am 19.08.2018
 - [x] Section 1: 19.08.2018
 	- [x] Lektion 1
 	- [x] Lektion 2 
-	- [x] Lektion 3
+	- [x] Lektion 3  
 	- [x] Lektion 4
 	- [x] Lektion 5
 	- [x] Lektion 6
@@ -41,7 +42,7 @@ Kurs gestartet am 19.08.2018
 	- [x] Lektion 12
 	- [x] Lektion 13
 	- [x] Lektion 14 
-	- [ ] Lektion 15
+	- [x] Lektion 15
 	- [ ] Lektion 16
 	- [ ] Lektion 17
 	- [ ] Lektion 18
@@ -155,3 +156,5 @@ Created two signals in script:
 	- `file.close()` - remember to close filestreams to prevent memory leaks.
 	- `return data`
 - very nice for localization.
+
+### 215: Using Git with GoDot
