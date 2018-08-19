@@ -3,17 +3,18 @@
 
 <!-- code_chunk_output -->
 
-* [Table of contents:](#table-of-contents)
-* [Learning Log](#learning-log)
-	* [Section 1](#section-1)
-		* [103: Installing GoDot](#103-installing-godot)
-		* [105: Hello GoDot.](#105-hello-godot)
-	* [Section 2: Loony Lips](#section-2-loony-lips)
-		* [207: Game Requirements](#207-game-requirements)
-		* [208: Introducing Arrays](#208-introducing-arrays)
-		* [209: RichTextLabel](#209-richtextlabel)
-		* [210: LineEdit](#210-lineedit)
-		* [211: Using Player´s Input](#211-using-player-́s-input)
+- [Table of contents:](#table-of-contents)
+- [Learning Log](#learning-log)
+	- [Section 1](#section-1)
+		- [103: Installing GoDot](#103-installing-godot)
+		- [105: Hello GoDot.](#105-hello-godot)
+	- [Section 2: Loony Lips](#section-2-loony-lips)
+		- [207: Game Requirements](#207-game-requirements)
+		- [208: Introducing Arrays](#208-introducing-arrays)
+		- [209: RichTextLabel](#209-richtextlabel)
+		- [210: LineEdit](#210-lineedit)
+		- [211: Using Player´s Input](#211-using-player%C2%B4s-input)
+		- [212: queue_free and reload_current_scene](#212-queuefree-and-reloadcurrentscene)
 
 <!-- /code_chunk_output -->
 
@@ -103,3 +104,9 @@ Created two signals in script:
 
 - if statements in python
 - `if thing > 0 : ` `elif anothercondition` `else dothis`  
+
+
+### 212: queue_free and reload_current_scene
+
+- `queue_free` removes nodes and set them free 
+- `get_tree` gets complete tree instead of nodes
