@@ -23,6 +23,8 @@
 		- [217: Godot Mono for C](#217-godot-mono-for-c)
 		- [218: Finding Nodes with C#](#218-finding-nodes-with-c)
 		- [219: Wiring Signals with C](#219-wiring-signals-with-c)
+		- [220: Json in C](#220-json-in-c)
+		- [221: Using JSONParseResult](#221-using-jsonparseresult)
 
 <!-- /code_chunk_output -->
 
@@ -183,3 +185,6 @@ Created two signals in script:
 * create functions is not working currently with c#, so copy name
 * signal functions are not public or private... :D
 * *cached reference* for storing nodes in c#
+
+### 220: Json in C#
+### 221: Using JSONParseResult
