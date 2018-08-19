@@ -19,6 +19,7 @@
 		* [213: Dictionaries for Story Templates](#213-dictionaries-for-story-templates)
 		* [214: JSON and File](#214-json-and-file)
 		* [215: Using Git with GoDot](#215-using-git-with-godot)
+		* [216: Visual Studio Code](#216-visual-studio-code)
 
 <!-- /code_chunk_output -->
 
@@ -26,9 +27,9 @@
 
 Kurs gestartet am 19.08.2018
 
-- [x] Section 1: 19.08.2018
-	- [x] Lektion 1
-	- [x] Lektion 2 
+* [x] Section 1: 19.08.2018
+    - [x] Lektion 1
+    - [x] Lektion 2 
 	- [x] Lektion 3  
 	- [x] Lektion 4
 	- [x] Lektion 5
@@ -43,12 +44,12 @@ Kurs gestartet am 19.08.2018
 	- [x] Lektion 13
 	- [x] Lektion 14 
 	- [x] Lektion 15
-	- [ ] Lektion 16
+	- [x] Lektion 16
 	- [ ] Lektion 17
 	- [ ] Lektion 18
 	- [ ] Lektion 19
 	- [ ] Lektion 20
-	- [ ] Lektion 21
+    - [ ] Lektion 21
 	- [ ] Lektion 22
 
 # Learning Log
@@ -158,3 +159,13 @@ Created two signals in script:
 - very nice for localization.
 
 ### 215: Using Git with GoDot
+### 216: Visual Studio Code
+
+* Install Extensions
+  * GoDot Tools
+  * C#
+
+* Project Settings - Editor Settings
+  * Activate External Editor
+  * Set your "Exec Flags" as follows...
+	`{project} --goto {file}:{line}:{col}` 
