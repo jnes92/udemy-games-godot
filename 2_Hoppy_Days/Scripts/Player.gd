@@ -8,32 +8,38 @@ const JUMP_SPEED = 1500
 var motion = Vector2()
 
 func _physics_process(delta):
+	update_motion():
+
+func _process(delta):
+	update_animation(motion)
+
+func update_motion(delta):
 	fall(delta)
 	run()
 	jump()
 	move_and_slide(motion, UP)
 
+func update_animation(motion):
+	$AnimatedSprite.update(motion)
+
 func fall(delta):
 	if is_on_floor():
 		motion.y = 0
 	else:
-		motion.y += GRAVITY * delta
-
+		# actually move_and_slide uses delta internally, too : so read GRAVITY * delta ^2 -> Accelerating falling
+		motion.y += GRAVITY * delta 
 func run():
 	var inputLeft =Input.is_action_pressed("ui_left")
 	var inputRight = Input.is_action_pressed("ui_right")
 
 	if inputRight and not inputLeft:
 		motion.x = SPEED
-		$AnimatedSprite.flip_h = false
-		$AnimatedSprite.play("run")
+
 	elif inputLeft and not inputRight:
 		motion.x = -SPEED
-		$AnimatedSprite.flip_h = true
-		$AnimatedSprite.play("run")
+
 	else:
 		motion.x = 0 
-		$AnimatedSprite.play("idle")
 
 func jump():
 	var inputUp = Input.is_action_pressed("ui_up")

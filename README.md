@@ -24,6 +24,7 @@
 		- [325: PhysicsBody 2D - Making a Character](#325-physicsbody-2d---making-a-character)
 		- [326: AnimatedSprite - Making Bunny Run](#326-animatedsprite---making-bunny-run)
 		- [327: Jumping](#327-jumping)
+		- [328: Cleaning up - Player Code](#328-cleaning-up---player-code)
 
 <!-- /code_chunk_output -->
 
@@ -61,7 +62,7 @@ Kurs gestartet am 19.08.2018
 	* [x] 25
 	* [x] 26
 	* [x] 27
-	* [ ] 28
+	* [x] 28
 	* [ ] 29
 	* [ ] 30
 	* [ ] 31
@@ -246,3 +247,10 @@ Created two signals in script:
 * change main scene under project-settings -> run
 * godot´s coordinate system starts at the top left with 0,0 
 	* to go 1 unit up its Vector2(0, -1)
+
+
+### 328: Cleaning up - Player Code
+
+* elegant code
+	* easy readable for human
+	* one script should ony be responsible for one thing
