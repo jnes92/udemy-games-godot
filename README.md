@@ -23,6 +23,7 @@
 	- [Section 3: Happy Days](#section-3-happy-days)
 		- [325: PhysicsBody 2D - Making a Character](#325-physicsbody-2d---making-a-character)
 		- [326: AnimatedSprite - Making Bunny Run](#326-animatedsprite---making-bunny-run)
+		- [327: Jumping](#327-jumping)
 
 <!-- /code_chunk_output -->
 
@@ -58,8 +59,8 @@ Kurs gestartet am 19.08.2018
 	* [x] 23
 	* [x] 24
 	* [x] 25
-	* [ ] 26
-	* [ ] 27
+	* [x] 26
+	* [x] 27
 	* [ ] 28
 	* [ ] 29
 	* [ ] 30
@@ -237,3 +238,11 @@ Created two signals in script:
 * instead of Sprite use AnimatedSprite
 * call animations in script via `.play(animationname)`
 * make sprites flip with setting boolean to `.flip_h`
+
+### 327: Jumping
+
+* instance of scene is similiar to a prefab
+* blue view : camera
+* change main scene under project-settings -> run
+* godot´s coordinate system starts at the top left with 0,0 
+	* to go 1 unit up its Vector2(0, -1)
