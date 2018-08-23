@@ -56,7 +56,7 @@ Kurs gestartet am 19.08.2018
 * [ ] Section 3: 23.08.2018
 	* [x] 23
 	* [x] 24
-	* [ ] 25
+	* [x] 25
 	* [ ] 26
 	* [ ] 27
 	* [ ] 28
@@ -206,3 +206,26 @@ Created two signals in script:
 
 ### 325:
 
+* add some node 2d (blue) 
+* PhysicsBody2D (base class)
+	* StaticBody2D shoudd not move
+	* RigidBody2d is passively moved, but has gravity
+	* KinematicBody2d without Gravity, but can be controlled direclty
+* green nodes are containers
+* collisionshaee is needed for kinematic body
+	* dont try to scale collisionscapes
+	* game run will reset it
+	* click on it set radius or change accents
+* collision bottom should be feet, not body to get track of the floor
+* Input.is_action_pressed takes a string as key parameter
+	* those values are defined in the project settings -> input map -> e.g. "ui_right"
+	* you can easily add keyboard keys to those values, e.g. add 'W' and 'Space' for "ui_up"
+* KinematicBody2D movement
+	* move_and_collide() : 
+		* stop when you hit sth
+		* get collision information
+		* no auto use of 'delta'
+	* move_and_slide():
+		* hit sth -> try to move along it
+		* can detect walls, floors, etc
+		* auto use delta when moving
