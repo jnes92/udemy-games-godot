@@ -11,9 +11,15 @@ func _physics_process(delta):
 
 	if inputRight and not inputLeft:
 		motion.x = SPEED
+		$AnimatedSprite.flip_h = false
+		$AnimatedSprite.play("run")
 	elif inputLeft and not inputRight:
 		motion.x = -SPEED
+		$AnimatedSprite.flip_h = true
+		$AnimatedSprite.play("run")
 	else:
 		motion.x = 0 
+		$AnimatedSprite.play("idle")
+
 
 	move_and_slide(motion)

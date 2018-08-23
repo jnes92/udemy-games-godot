@@ -21,7 +21,8 @@
 		- [215: Using Git with GoDot](#215-using-git-with-godot)
 		- [216: Visual Studio Code](#216-visual-studio-code)
 	- [Section 3: Happy Days](#section-3-happy-days)
-		- [325:](#325)
+		- [325: PhysicsBody 2D - Making a Character](#325-physicsbody-2d---making-a-character)
+		- [326: AnimatedSprite - Making Bunny Run](#326-animatedsprite---making-bunny-run)
 
 <!-- /code_chunk_output -->
 
@@ -204,7 +205,7 @@ Created two signals in script:
 
 23.08.2018 - today
 
-### 325:
+### 325: PhysicsBody 2D - Making a Character
 
 * add some node 2d (blue) 
 * PhysicsBody2D (base class)
@@ -229,3 +230,10 @@ Created two signals in script:
 		* hit sth -> try to move along it
 		* can detect walls, floors, etc
 		* auto use delta when moving
+
+
+### 326: AnimatedSprite - Making Bunny Run
+
+* instead of Sprite use AnimatedSprite
+* call animations in script via `.play(animationname)`
+* make sprites flip with setting boolean to `.flip_h`
