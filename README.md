@@ -3,23 +3,25 @@
 
 <!-- code_chunk_output -->
 
-* [Table of contents:](#table-of-contents)
-* [Overview](#overview)
-* [Learning Log](#learning-log)
-	* [Section 1](#section-1)
-		* [103: Installing GoDot](#103-installing-godot)
-		* [105: Hello GoDot.](#105-hello-godot)
-	* [Section 2: Loony Lips](#section-2-loony-lips)
-		* [207: Game Requirements](#207-game-requirements)
-		* [208: Introducing Arrays](#208-introducing-arrays)
-		* [209: RichTextLabel](#209-richtextlabel)
-		* [210: LineEdit](#210-lineedit)
-		* [211: Using Player´s Input](#211-using-player-́s-input)
-		* [212: queue_free and reload_current_scene](#212-queue_free-and-reload_current_scene)
-		* [213: Dictionaries for Story Templates](#213-dictionaries-for-story-templates)
-		* [214: JSON and File](#214-json-and-file)
-		* [215: Using Git with GoDot](#215-using-git-with-godot)
-		* [216: Visual Studio Code](#216-visual-studio-code)
+- [Table of contents:](#table-of-contents)
+- [Overview](#overview)
+- [Learning Log](#learning-log)
+	- [Section 1](#section-1)
+		- [103: Installing GoDot](#103-installing-godot)
+		- [105: Hello GoDot.](#105-hello-godot)
+	- [Section 2: Loony Lips](#section-2-loony-lips)
+		- [207: Game Requirements](#207-game-requirements)
+		- [208: Introducing Arrays](#208-introducing-arrays)
+		- [209: RichTextLabel](#209-richtextlabel)
+		- [210: LineEdit](#210-lineedit)
+		- [211: Using Player´s Input](#211-using-player%C2%B4s-input)
+		- [212: queue_free and reload_current_scene](#212-queuefree-and-reloadcurrentscene)
+		- [213: Dictionaries for Story Templates](#213-dictionaries-for-story-templates)
+		- [214: JSON and File](#214-json-and-file)
+		- [215: Using Git with GoDot](#215-using-git-with-godot)
+		- [216: Visual Studio Code](#216-visual-studio-code)
+	- [Section 3: Happy Days](#section-3-happy-days)
+		- [325:](#325)
 
 <!-- /code_chunk_output -->
 
@@ -51,6 +53,33 @@ Kurs gestartet am 19.08.2018
 	- [ ] Lektion 20
     - [ ] Lektion 21
 	- [ ] Lektion 22
+* [ ] Section 3: 23.08.2018
+	* [x] 23
+	* [x] 24
+	* [ ] 25
+	* [ ] 26
+	* [ ] 27
+	* [ ] 28
+	* [ ] 29
+	* [ ] 30
+	* [ ] 31
+	* [ ] 32
+	* [ ] 33
+	* [ ] 34
+	* [ ] 35
+	* [ ] 36
+	* [ ] 37
+	* [ ] 38
+	* [ ] 39
+	* [ ] 40
+	* [ ] 41
+	* [ ] 42
+	* [ ] 43
+	* [ ] 44
+	* [ ] 45
+	* [ ] 46
+	* [ ] 47
+	* [ ] 48 
 
 # Learning Log
 ## Section 1 
@@ -169,3 +198,11 @@ Created two signals in script:
   * Activate External Editor
   * Set your "Exec Flags" as follows...
 	`{project} --goto {file}:{line}:{col}` 
+
+
+## Section 3: Happy Days
+
+23.08.2018 - today
+
+### 325:
+
