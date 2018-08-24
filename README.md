@@ -29,6 +29,7 @@
 		- [327: Jumping](#327-jumping)
 		- [328: Cleaning up - Player Code](#328-cleaning-up---player-code)
 		- [329: Tilemaps- Making a level](#329-tilemaps--making-a-level)
+		- [331: Parallax Backgrounds](#331-parallax-backgrounds)
 
 <!-- /code_chunk_output -->
 
@@ -289,3 +290,16 @@ Created two signals in script:
 
 ![tilemap](docs/2_hoppy_days_02_01_tilemap.png)
 ![level1](docs/2_hoppy_days_02_02_level1.png)
+
+### 331: Parallax Backgrounds
+
+* parallax
+	* phenomen, where objects seem to be in different positions based on your viewing angle
+	* the closer a layer is ,the faster it will move
+		* background is very slow
+		* foreground is very fast
+	* faster the layer moves, the faster the player will feel like they´re going
+	* speed of parallax will be controlled through `Scale` in Godot
+
+![level1-with-bg](docs/2_hoppy_days_02_03_background.png)
+
