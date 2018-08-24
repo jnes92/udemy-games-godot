@@ -7,6 +7,7 @@
 - [Screenshots](#screenshots)
 	- [Hoppy Days](#hoppy-days)
 		- [State 23.08.18 (after Lection 28)](#state-230818-after-lection-28)
+		- [State 24.08.18 (after lection 33)](#state-240818-after-lection-33)
 - [Overview](#overview)
 - [Learning Log](#learning-log)
 	- [Section 1](#section-1)
@@ -30,6 +31,7 @@
 		- [328: Cleaning up - Player Code](#328-cleaning-up---player-code)
 		- [329: Tilemaps- Making a level](#329-tilemaps--making-a-level)
 		- [331: Parallax Backgrounds](#331-parallax-backgrounds)
+		- [332: Game Over Screen](#332-game-over-screen)
 
 <!-- /code_chunk_output -->
 
@@ -41,6 +43,12 @@ idle | move
 - | - 
 ![](docs/2_hoppy_days_01_01.png) | ![](docs/2_hoppy_days_01_02.png)
 ![](docs/2_hoppy_days_01_03.png) | ![](docs/2_hoppy_days_01_04.png)
+
+### State 24.08.18 (after lection 33)
+tilemaps | game 
+- | - 
+![tilemap](docs/2_hoppy_days_02_01_tilemap.png) | ![level1-with-bg](docs/2_hoppy_days_02_03_background.png)
+![level1](docs/2_hoppy_days_02_02_level1.png) | ![game-over](docs/2_hoppy_days_02_04_gameover.png)
 
 # Overview
 
@@ -79,8 +87,8 @@ Kurs gestartet am 19.08.2018
 	* [x] 28
 	* [x] 29
 	* [x] 30
-	* [ ] 31
-	* [ ] 32
+	* [x] 31
+	* [x] 32
 	* [ ] 33
 	* [ ] 34
 	* [ ] 35
@@ -303,3 +311,15 @@ Created two signals in script:
 
 ![level1-with-bg](docs/2_hoppy_days_02_03_background.png)
 
+### 332: Game Over Screen
+
+* node color green is for ui
+	* blue for 2d
+	* red for 3d
+* ui elements have a layout option inside the main nav (above the scene)
+	* you can select full rect to expand to the whole view
+	* you can select full rect to expand to the parent node (if child selected)
+* right click on scene to copy path 
+	* suitable for `change_scene()`
+
+![game-over](docs/2_hoppy_days_02_04_gameover.png)

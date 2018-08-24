@@ -5,7 +5,7 @@
 [ext_resource path="res://GFX/Background/bg_layer3.png" type="Texture" id=3]
 [ext_resource path="res://GFX/Background/bg_layer4.png" type="Texture" id=4]
 
-[node name="ParallaxBackground" type="ParallaxBackground" index="0"]
+[node name="ParallaxBackground" type="ParallaxBackground"]
 
 layer = -1
 offset = Vector2( 0, 0 )

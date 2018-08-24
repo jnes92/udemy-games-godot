@@ -6,6 +6,7 @@ const UP = Vector2(0, -1)
 const JUMP_SPEED = 1500
 
 var motion = Vector2()
+export var world_limit = 2000
 
 func _physics_process(delta):
 	update_motion(delta)
@@ -28,6 +29,9 @@ func fall(delta):
 	else:
 		motion.y += GRAVITY * delta 		# actually move_and_slide uses delta internally, too : so read GRAVITY * delta ^2 -> Accelerating falling
 
+	if position.y > world_limit:
+		end_game()
+
 func run():
 	var inputLeft =Input.is_action_pressed("ui_left")
 	var inputRight = Input.is_action_pressed("ui_right")
@@ -48,3 +52,5 @@ func jump():
 		var direction = -1
 		motion.y = direction * JUMP_SPEED
 
+func end_game():
+	get_tree().change_scene("res://Scenes/GameOver.tscn")
