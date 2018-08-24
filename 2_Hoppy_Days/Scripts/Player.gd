@@ -23,7 +23,7 @@ func update_animation(motion):
 	$AnimatedSprite.update(motion)
 
 func fall(delta):
-	if is_on_floor():
+	if is_on_floor() or is_on_ceiling():
 		motion.y = 0
 	else:
 		motion.y += GRAVITY * delta 		# actually move_and_slide uses delta internally, too : so read GRAVITY * delta ^2 -> Accelerating falling
