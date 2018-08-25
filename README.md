@@ -40,6 +40,7 @@
 		- [339: AnimationPlayer - Making Coins](#339-animationplayer---making-coins)
 		- [340: Polishing the GUI:](#340-polishing-the-gui)
 		- [341: AudioStreamPlayer - Bring the Noise !](#341-audiostreamplayer---bring-the-noise)
+		- [342: Jump Pads](#342-jump-pads)
 
 <!-- /code_chunk_output -->
 
@@ -105,8 +106,8 @@ Kurs gestartet am 19.08.2018
 	* [x] 38
 	* [x] 39
 	* [x] 40
-	* [ ] 41
-	* [ ] 42
+	* [x] 41
+	* [x] 42
 	* [ ] 43
 	* [ ] 44
 	* [ ] 45
@@ -385,3 +386,5 @@ Created two signals in script:
 nice links :
 * [opengameart](https://opengameart.org/content/4-chiptunes-adventure)
 * [create sfx online](https://jfxr.frozenfractal.com/#)
+
+### 342: Jump Pads

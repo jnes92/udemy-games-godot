@@ -4,9 +4,10 @@ const SPEED = 1000
 const GRAVITY = 3500
 const UP = Vector2(0, -1)
 const JUMP_SPEED = 1500
+const JUMP_BOOST_MULTIPLIER = 2
 
 var motion = Vector2()
-export var world_limit = 2000
+export var world_limit = 2500
 
 func _ready():
 	Global.Player = self
@@ -55,6 +56,11 @@ func jump():
 		Global.jump_sfx.play()
 		var direction = -1
 		motion.y = direction * JUMP_SPEED
+
+func boost_jump():
+	var direction = -1
+	motion.y = direction * JUMP_SPEED * JUMP_BOOST_MULTIPLIER
+
 
 func hurt():
 	var direction = -1
