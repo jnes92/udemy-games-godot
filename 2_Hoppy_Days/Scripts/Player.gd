@@ -55,3 +55,6 @@ func jump():
 		var direction = -1
 		motion.y = direction * JUMP_SPEED
 
+func hurt():
+	var direction = -1
+	motion.y = direction * JUMP_SPEED
