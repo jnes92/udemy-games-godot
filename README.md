@@ -34,6 +34,7 @@
 		- [332: Game Over Screen](#332-game-over-screen)
 		- [333: Area2D Making Spike Hazard](#333-area2d-making-spike-hazard)
 		- [334: Control Nodes - Making a GUI](#334-control-nodes---making-a-gui)
+		- [335: Gamestate.gd](#335-gamestategd)
 
 <!-- /code_chunk_output -->
 
@@ -93,7 +94,7 @@ Kurs gestartet am 19.08.2018
 	* [x] 32
 	* [x] 33
 	* [x] 34
-	* [ ] 35
+	* [x] 35
 	* [ ] 36
 	* [ ] 37
 	* [ ] 38
@@ -340,3 +341,6 @@ Created two signals in script:
 * several control nodes can sort things automatically
 
 ![gui](docs/2_hoppy_days_03_gui.png)
+
+### 335: Gamestate.gd
+

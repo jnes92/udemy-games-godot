@@ -30,7 +30,7 @@ func fall(delta):
 		motion.y += GRAVITY * delta 		# actually move_and_slide uses delta internally, too : so read GRAVITY * delta ^2 -> Accelerating falling
 
 	if position.y > world_limit:
-		end_game()
+		get_parent().end_game()
 
 func run():
 	var inputLeft =Input.is_action_pressed("ui_left")
@@ -52,5 +52,3 @@ func jump():
 		var direction = -1
 		motion.y = direction * JUMP_SPEED
 
-func end_game():
-	get_tree().change_scene("res://Scenes/GameOver.tscn")
