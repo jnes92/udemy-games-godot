@@ -39,6 +39,7 @@
 		- [338: Updating the GUI](#338-updating-the-gui)
 		- [339: AnimationPlayer - Making Coins](#339-animationplayer---making-coins)
 		- [340: Polishing the GUI:](#340-polishing-the-gui)
+		- [341: AudioStreamPlayer - Bring the Noise !](#341-audiostreamplayer---bring-the-noise)
 
 <!-- /code_chunk_output -->
 
@@ -371,3 +372,16 @@ Created two signals in script:
 
 * onready var gets executed before the other functions
 * used to get nodes as variables
+  
+### 341: AudioStreamPlayer - Bring the Noise !
+
+* AudioStreamPlayer: no positioning like distance
+* 2d and 3d have positional information
+* sounds cant be mp3 (not natively supported by godot) 
+	* convert it, but cant be used commercial
+* godot sometimes make ogg files loop 
+	* check import tab (next to scene) and reimport files to fix i
+
+nice links :
+* [opengameart](https://opengameart.org/content/4-chiptunes-adventure)
+* [create sfx online](https://jfxr.frozenfractal.com/#)

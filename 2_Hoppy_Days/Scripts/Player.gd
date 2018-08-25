@@ -52,6 +52,7 @@ func jump():
 	var inputUp = Input.is_action_pressed("ui_up")
 
 	if inputUp and is_on_floor():
+		Global.jump_sfx.play()
 		var direction = -1
 		motion.y = direction * JUMP_SPEED
 
