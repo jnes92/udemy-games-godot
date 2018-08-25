@@ -33,6 +33,7 @@
 		- [331: Parallax Backgrounds](#331-parallax-backgrounds)
 		- [332: Game Over Screen](#332-game-over-screen)
 		- [333: Area2D Making Spike Hazard](#333-area2d-making-spike-hazard)
+		- [334: Control Nodes - Making a GUI](#334-control-nodes---making-a-gui)
 
 <!-- /code_chunk_output -->
 
@@ -91,7 +92,7 @@ Kurs gestartet am 19.08.2018
 	* [x] 31
 	* [x] 32
 	* [x] 33
-	* [ ] 34
+	* [x] 34
 	* [ ] 35
 	* [ ] 36
 	* [ ] 37
@@ -327,3 +328,15 @@ Created two signals in script:
 ![game-over](docs/2_hoppy_days_02_04_gameover.png)
 
 ### 333: Area2D Making Spike Hazard
+
+* area2d
+	* detection and 2d influence
+	* just do sth whenever we have a collision
+
+### 334: Control Nodes - Making a GUI
+
+* anchors tell godot where to calculate margins from
+* you can make anchors visible
+* several control nodes can sort things automatically
+
+![gui](docs/2_hoppy_days_03_gui.png)
