@@ -57,23 +57,25 @@ position = Vector2( 5376.09, 935.552 )
 [node name="Coin" parent="Coins" index="0" instance=ExtResource( 6 )]
 
 position = Vector2( 1829.8, 414.177 )
-frame = 4
 
 [node name="Coin2" parent="Coins" index="1" instance=ExtResource( 6 )]
 
 position = Vector2( 3589.56, 877.404 )
-frame = 3
+frame = 4
 
 [node name="Coin3" parent="Coins" index="2" instance=ExtResource( 6 )]
 
 position = Vector2( 3702.85, 877.404 )
+frame = 0
 
 [node name="Coin4" parent="Coins" index="3" instance=ExtResource( 6 )]
 
 position = Vector2( 3816.14, 874.887 )
+frame = 0
 
 [node name="Coin5" parent="Coins" index="4" instance=ExtResource( 6 )]
 
 position = Vector2( 4589.02, 869.852 )
+frame = 0
 
 

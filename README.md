@@ -38,6 +38,7 @@
 		- [336: Global Scripts](#336-global-scripts)
 		- [338: Updating the GUI](#338-updating-the-gui)
 		- [339: AnimationPlayer - Making Coins](#339-animationplayer---making-coins)
+		- [340: Polishing the GUI:](#340-polishing-the-gui)
 
 <!-- /code_chunk_output -->
 
@@ -102,7 +103,7 @@ Kurs gestartet am 19.08.2018
 	* [x] 37
 	* [x] 38
 	* [x] 39
-	* [ ] 40
+	* [x] 40
 	* [ ] 41
 	* [ ] 42
 	* [ ] 43
@@ -365,3 +366,8 @@ Created two signals in script:
 
 * you can define key frames with various types from nodes (select key symbol)
 * animationPlayer can also call functions inside the animation
+
+### 340: Polishing the GUI:
+
+* onready var gets executed before the other functions
+* used to get nodes as variables
