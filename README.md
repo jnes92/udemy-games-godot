@@ -37,6 +37,7 @@
 		- [335: Gamestate.gd](#335-gamestategd)
 		- [336: Global Scripts](#336-global-scripts)
 		- [338: Updating the GUI](#338-updating-the-gui)
+		- [339: AnimationPlayer - Making Coins](#339-animationplayer---making-coins)
 
 <!-- /code_chunk_output -->
 
@@ -99,8 +100,8 @@ Kurs gestartet am 19.08.2018
 	* [x] 35
 	* [x] 36
 	* [x] 37
-	* [ ] 38
-	* [ ] 39
+	* [x] 38
+	* [x] 39
 	* [ ] 40
 	* [ ] 41
 	* [ ] 42
@@ -359,3 +360,8 @@ Created two signals in script:
 ### 338: Updating the GUI
 
 * str(integer var) is casting an int to a string
+
+### 339: AnimationPlayer - Making Coins
+
+* you can define key frames with various types from nodes (select key symbol)
+* animationPlayer can also call functions inside the animation

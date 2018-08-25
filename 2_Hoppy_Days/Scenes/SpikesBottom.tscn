@@ -11,8 +11,8 @@ texture = ExtResource( 2 )
 
 [node name="CollisionPolygon2D" parent="." index="1"]
 
-visible = true
 rotation = 3.14159
+polygon = PoolVector2Array( -46.9926, 25.2714, -44.6092, -26.5042, -27.9664, -26.8128, -14.6428, -10.8075, -4.42147, -27.0506, 3.66467, -27.2884, 15.5614, -11.0452, 25.7826, -27.5263, 47.1927, -27.9309, 47.1871, 26.4606 )
 _sections_unfolded = [ "Transform" ]
 
 

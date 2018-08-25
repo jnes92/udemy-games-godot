@@ -3,7 +3,7 @@
 [ext_resource path="res://Scripts/Hazards.gd" type="Script" id=1]
 [ext_resource path="res://GFX/Environment/spikes_top.png" type="Texture" id=2]
 
-[node name="SpikesTop" type="Area2D"]
+[node name="SpikesTop" type="Area2D" index="0"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
@@ -28,7 +28,7 @@ _sections_unfolded = [ "Visibility" ]
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1"]
 
 build_mode = 0
-polygon = PoolVector2Array( -46.9926, 25.2714, -34.1499, -26.8128, -27.9664, -26.8128, -15.3615, 19.3258, -4.42147, -27.0506, 3.66467, -27.2884, 14.6047, 19.0879, 25.7826, -27.5263, 33.3931, -27.5263, 47.1871, 26.4606 )
+polygon = PoolVector2Array( -46.9926, 25.2714, -42.1437, -26.7084, -27.9664, -26.8128, -15.9521, -7.14365, -4.42147, -27.0506, 3.66467, -27.2884, 14.4994, -7.14365, 25.7826, -27.5263, 46.371, -27.3395, 47.1871, 26.4606 )
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 
