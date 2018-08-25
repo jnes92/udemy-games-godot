@@ -36,6 +36,7 @@
 		- [334: Control Nodes - Making a GUI](#334-control-nodes---making-a-gui)
 		- [335: Gamestate.gd](#335-gamestategd)
 		- [336: Global Scripts](#336-global-scripts)
+		- [338: Updating the GUI](#338-updating-the-gui)
 
 <!-- /code_chunk_output -->
 
@@ -354,3 +355,7 @@ Created two signals in script:
 * scripts can be added to autoload
 	* project settings -> autoload -> add scripts
 	* can be marked as singleton
+
+### 338: Updating the GUI
+
+* str(integer var) is casting an int to a string
