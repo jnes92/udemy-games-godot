@@ -8,6 +8,9 @@ const JUMP_SPEED = 1500
 var motion = Vector2()
 export var world_limit = 2000
 
+func _ready():
+	Global.Player = self
+
 func _physics_process(delta):
 	update_motion(delta)
 
@@ -30,7 +33,7 @@ func fall(delta):
 		motion.y += GRAVITY * delta 		# actually move_and_slide uses delta internally, too : so read GRAVITY * delta ^2 -> Accelerating falling
 
 	if position.y > world_limit:
-		get_parent().end_game()
+		Global.GameState.end_game()
 
 func run():
 	var inputLeft =Input.is_action_pressed("ui_left")

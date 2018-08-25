@@ -35,6 +35,7 @@
 		- [333: Area2D Making Spike Hazard](#333-area2d-making-spike-hazard)
 		- [334: Control Nodes - Making a GUI](#334-control-nodes---making-a-gui)
 		- [335: Gamestate.gd](#335-gamestategd)
+		- [336: Global Scripts](#336-global-scripts)
 
 <!-- /code_chunk_output -->
 
@@ -95,7 +96,7 @@ Kurs gestartet am 19.08.2018
 	* [x] 33
 	* [x] 34
 	* [x] 35
-	* [ ] 36
+	* [x] 36
 	* [ ] 37
 	* [ ] 38
 	* [ ] 39
@@ -343,4 +344,13 @@ Created two signals in script:
 ![gui](docs/2_hoppy_days_03_gui.png)
 
 ### 335: Gamestate.gd
+### 336: Global Scripts
 
+* more convenient
+	* linking is easier between nodes
+* more robust 
+	* no string references in node paths
+
+* scripts can be added to autoload
+	* project settings -> autoload -> add scripts
+	* can be marked as singleton
