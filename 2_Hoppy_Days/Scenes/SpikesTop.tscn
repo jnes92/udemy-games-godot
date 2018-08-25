@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/SpikesTop.gd" type="Script" id=1]
+[ext_resource path="res://GFX/Environment/spikes_top.png" type="Texture" id=2]
+
+[node name="SpikesTop" type="Area2D" index="0"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+collision_layer = 4
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+modulate = Color( 0.734361, 0.738281, 0.236481, 1 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( -46.9926, 25.2714, -34.1499, -26.8128, -27.9664, -26.8128, -15.3615, 19.3258, -4.42147, -27.0506, 3.66467, -27.2884, 14.6047, 19.0879, 25.7826, -27.5263, 33.3931, -27.5263, 47.1871, 26.4606 )
+
+[connection signal="body_entered" from="." to="." method="_on_SpikesTop_body_entered"]
+
+

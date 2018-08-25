@@ -32,6 +32,7 @@
 		- [329: Tilemaps- Making a level](#329-tilemaps--making-a-level)
 		- [331: Parallax Backgrounds](#331-parallax-backgrounds)
 		- [332: Game Over Screen](#332-game-over-screen)
+		- [333: Area2D Making Spike Hazard](#333-area2d-making-spike-hazard)
 
 <!-- /code_chunk_output -->
 
@@ -89,7 +90,7 @@ Kurs gestartet am 19.08.2018
 	* [x] 30
 	* [x] 31
 	* [x] 32
-	* [ ] 33
+	* [x] 33
 	* [ ] 34
 	* [ ] 35
 	* [ ] 36
@@ -229,8 +230,9 @@ Created two signals in script:
 
 23.08.2018 - today
 
-* 23.08.18: around 90min
-* 24.08.18: 30min
+* 23.08.18: around 1,5h (23-28)
+* 24.08.18: around 1,5h (29-32)
+* 25.08.18: (33)
 
 ### 325: PhysicsBody 2D - Making a Character
 
@@ -323,3 +325,5 @@ Created two signals in script:
 	* suitable for `change_scene()`
 
 ![game-over](docs/2_hoppy_days_02_04_gameover.png)
+
+### 333: Area2D Making Spike Hazard

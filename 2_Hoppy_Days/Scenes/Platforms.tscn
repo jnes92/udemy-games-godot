@@ -13,7 +13,6 @@
 
 [node name="GroundCake" type="Sprite" parent="." index="0"]
 
-editor/display_folded = true
 position = Vector2( 190, 50 )
 texture = ExtResource( 1 )
 __meta__ = {
