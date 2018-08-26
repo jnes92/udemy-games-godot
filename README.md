@@ -108,7 +108,7 @@ Kurs gestartet am 19.08.2018
 	* [x] 40
 	* [x] 41
 	* [x] 42
-	* [ ] 43
+	* [x] 43
 	* [ ] 44
 	* [ ] 45
 	* [ ] 46
@@ -240,7 +240,7 @@ Created two signals in script:
 
 * 23.08.18: around 1,5h (23-28)
 * 24.08.18: around 1,5h (29-32)
-* 25.08.18: (33)
+* 25.08.18: around 3h (33-42)
 
 ### 325: PhysicsBody 2D - Making a Character
 

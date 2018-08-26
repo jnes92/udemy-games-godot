@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scripts/GameState.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://SFX/pain.ogg" type="AudioStream" id=10]
 [ext_resource path="res://Scripts/Pain_SFX.gd" type="Script" id=11]
 [ext_resource path="res://Scenes/JumpPad.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Spikeman.tscn" type="PackedScene" id=13]
 
 [node name="Level1" type="Node2D"]
 
@@ -29,7 +30,6 @@ collision_mask = 2
 zoom = Vector2( 1.5, 1.5 )
 limit_left = 0
 limit_bottom = 2500
-_sections_unfolded = [ "Limit", "Smoothing" ]
 
 [node name="TileMap" type="TileMap" parent="." index="1"]
 
@@ -62,6 +62,8 @@ editor/display_folded = true
 position = Vector2( 5376.09, 935.552 )
 
 [node name="Coins" type="Node2D" parent="." index="3"]
+
+editor/display_folded = true
 
 [node name="Coin" parent="Coins" index="0" instance=ExtResource( 6 )]
 
@@ -121,6 +123,8 @@ frame = 2
 
 [node name="Sounds" type="Node2D" parent="." index="4"]
 
+editor/display_folded = true
+
 [node name="Music" type="AudioStreamPlayer" parent="Sounds" index="0"]
 
 stream = ExtResource( 7 )
@@ -152,6 +156,8 @@ script = ExtResource( 11 )
 
 [node name="JumpPads" type="Node2D" parent="." index="5"]
 
+editor/display_folded = true
+
 [node name="JumpPad" parent="JumpPads" index="0" instance=ExtResource( 12 )]
 
 position = Vector2( 1798.73, 732.393 )
@@ -159,5 +165,15 @@ position = Vector2( 1798.73, 732.393 )
 [node name="JumpPad2" parent="JumpPads" index="1" instance=ExtResource( 12 )]
 
 position = Vector2( 6292.97, 1621.85 )
+
+[node name="NPCs" type="Node2D" parent="." index="6"]
+
+[node name="Spikeman" parent="NPCs" index="0" instance=ExtResource( 13 )]
+
+position = Vector2( 3618.33, 878.412 )
+
+[node name="Spikeman2" parent="NPCs" index="1" instance=ExtResource( 13 )]
+
+position = Vector2( 1077.08, 889.57 )
 
 
