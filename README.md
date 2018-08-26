@@ -41,6 +41,7 @@
 		- [340: Polishing the GUI:](#340-polishing-the-gui)
 		- [341: AudioStreamPlayer - Bring the Noise !](#341-audiostreamplayer---bring-the-noise)
 		- [342: Jump Pads](#342-jump-pads)
+		- [345: Making the Cloud NPC](#345-making-the-cloud-npc)
 
 <!-- /code_chunk_output -->
 
@@ -110,7 +111,7 @@ Kurs gestartet am 19.08.2018
 	* [x] 42
 	* [x] 43
 	* [x] 44
-	* [ ] 45
+	* [x] 45
 	* [ ] 46
 	* [ ] 47
 	* [ ] 48 
@@ -389,3 +390,12 @@ nice links :
 * [create sfx online](https://jfxr.frozenfractal.com/#)
 
 ### 342: Jump Pads
+### 345: Making the Cloud NPC
+
+* raycast dont exist in the world
+	* Line of sight, like an infarot sensor
+	* disabled by default (enable inside inspector)
+	* sends a signal if sth disrupts the raycast
+* visibilityNOtifier2d: checks if a node is on camera/scene
+* load can cast a scene path to an object 
+* get_overlapping_bodies can check for bodies colliding with an area2d
