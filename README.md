@@ -88,33 +88,8 @@ Kurs gestartet am 19.08.2018
 	- [ ] Lektion 20
     - [ ] Lektion 21
 	- [ ] Lektion 22
-* [ ] Section 3: 23.08.2018 - 26.08.18
-	* [x] 23
-	* [x] 24
-	* [x] 25
-	* [x] 26
-	* [x] 27
-	* [x] 28
-	* [x] 29
-	* [x] 30
-	* [x] 31
-	* [x] 32
-	* [x] 33
-	* [x] 34
-	* [x] 35
-	* [x] 36
-	* [x] 37
-	* [x] 38
-	* [x] 39
-	* [x] 40
-	* [x] 41
-	* [x] 42
-	* [x] 43
-	* [x] 44
-	* [x] 45
-	* [x] 46
-	* [ ] 47
-	* [ ] 48 
+* [x] Section 3: 23.08.2018 - 26.08.18
+
 
 # Learning Log
 ## Section 1 
@@ -242,7 +217,7 @@ Created two signals in script:
 * 23.08.18: around 1,5h (23-28)
 * 24.08.18: around 1,5h (29-32)
 * 25.08.18: around 3h (33-42)
-* 26.08.18: around 2h (43-48)
+* 26.08.18: around 1,5h (43-48)
 
 ### 325: PhysicsBody 2D - Making a Character
 
