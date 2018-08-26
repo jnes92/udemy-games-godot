@@ -87,7 +87,7 @@ Kurs gestartet am 19.08.2018
 	- [ ] Lektion 20
     - [ ] Lektion 21
 	- [ ] Lektion 22
-* [ ] Section 3: 23.08.2018
+* [ ] Section 3: 23.08.2018 - 26.08.18
 	* [x] 23
 	* [x] 24
 	* [x] 25
@@ -109,7 +109,7 @@ Kurs gestartet am 19.08.2018
 	* [x] 41
 	* [x] 42
 	* [x] 43
-	* [ ] 44
+	* [x] 44
 	* [ ] 45
 	* [ ] 46
 	* [ ] 47
@@ -236,11 +236,12 @@ Created two signals in script:
 
 ## Section 3: Hoppy Days
 
-23.08.2018 - today
+**23.08.2018 - 26.08.18**
 
 * 23.08.18: around 1,5h (23-28)
 * 24.08.18: around 1,5h (29-32)
 * 25.08.18: around 3h (33-42)
+* 26.08.18: around 2h (43-48)
 
 ### 325: PhysicsBody 2D - Making a Character
 
