@@ -1,11 +1,57 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scenes/Characters/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Tilesets/AutoTileWalls.tres" type="TileSet" id=2]
 
 [node name="Level1" type="Node2D" index="0"]
 
 [node name="Player" parent="." index="0" instance=ExtResource( 1 )]
 
 position = Vector2( 519.444, 293.677 )
+
+[node name="Camera2D" type="Camera2D" parent="Player" index="2"]
+
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = false
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+
+[node name="Walls" type="TileMap" parent="." index="1"]
+
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 64, 64 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 65540, 0, 262144, 65541, 0, 262146, 65542, 0, 262146, 65543, 0, 262146, 65544, 0, 262146, 65545, 0, 262146, 65546, 0, 262146, 65547, 0, 262146, 65548, 0, 524292, 65549, 0, 524293, 65550, 0, 262146, 65551, 0, 262146, 65552, 0, 262146, 65553, 0, 262145, 131076, 0, 327682, 131084, 0, 393220, 131085, 0, 393221, 131089, 0, 327682, 131092, 0, 262144, 131093, 0, 262146, 131094, 0, 262145, 196612, 0, 327682, 196614, 0, 327686, 196615, 0, 262149, 196617, 0, 327686, 196618, 0, 262149, 196620, 0, 589826, 196621, 0, 327688, 196623, 0, 458758, 196625, 0, 327680, 196626, 0, 262146, 196627, 0, 262147, 196628, 0, 327681, 196630, 0, 327682, 262148, 0, 327682, 262156, 0, 262150, 262163, 0, 262150, 262166, 0, 327680, 262167, 0, 262145, 327684, 0, 327682, 327694, 0, 262151, 327695, 0, 262152, 327697, 0, 458758, 327701, 0, 458758, 327703, 0, 327682, 393220, 0, 327682, 393223, 0, 327686, 393224, 0, 262146, 393225, 0, 262149, 393230, 0, 327687, 393231, 0, 327688, 393235, 0, 327685, 393239, 0, 327682, 458756, 0, 327682, 458764, 0, 327685, 458769, 0, 262144, 458770, 0, 262146, 458771, 0, 262148, 458772, 0, 262146, 458773, 0, 262146, 458774, 0, 262146, 458775, 0, 327681, 524292, 0, 327680, 524293, 0, 262146, 524294, 0, 262146, 524295, 0, 262146, 524296, 0, 262146, 524297, 0, 262146, 524298, 0, 262146, 524299, 0, 262146, 524300, 0, 262148, 524301, 0, 262146, 524302, 0, 262146, 524303, 0, 262146, 524304, 0, 262146, 524305, 0, 327681 )
 
 

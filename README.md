@@ -9,6 +9,8 @@
 		- [State 23.08.18 (after Lection 28)](#state-230818-after-lection-28)
 		- [State 24.08.18 (after lection 33)](#state-240818-after-lection-33)
 		- [State 26.08.18 - Finished after 48](#state-260818---finished-after-48)
+	- [Heis Meisters](#heis-meisters)
+		- [State 05.01.18 (after lection 47)](#state-050118-after-lection-47)
 - [Overview](#overview)
 - [Learning Log](#learning-log)
 	- [Section 1](#section-1)
@@ -44,7 +46,7 @@
 		- [342: Jump Pads](#342-jump-pads)
 		- [345: Making the Cloud NPC](#345-making-the-cloud-npc)
 	- [Section 4: Heist Masters](#section-4-heist-masters)
-		- [444 Installing Assets](#444-installing-assets)
+		- [447: Autotiling](#447-autotiling)
 
 <!-- /code_chunk_output -->
 
@@ -70,6 +72,11 @@ tilemaps | game
 ![](docs/2_hoppy_days_04_01_clouds.png) | ![](docs/2_hoppy_days_04_02_spikeman.png) | ![](docs/2_hoppy_days_04_03_spikeman2.png)
 ![](docs/2_hoppy_days_04_04_portal.png) | ![](docs/2_hoppy_days_04_05_victory.png)
 
+
+
+## Heis Meisters
+### State 05.01.18 (after lection 47)
+![autotile](docs/3/47_autotile.png)
 
 # Overview
 
@@ -369,3 +376,13 @@ nice links :
 
 **05.01.19 - **
 Times: 
+- 05.01.19 11:00 - 12:30 => 1h 30m
+
+### 447: Autotiling
+
++ levels can be made much faster
++ easy to tweak levels
++ collision, occlusion and navigation in 1
+- very time consuming for setup
+
+- autotiling with 3x3 gives more precision
