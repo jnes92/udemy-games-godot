@@ -22,3 +22,11 @@ func update_motion(delta):
 		motion.x = clamp(motion.x + SPEED, 0, MAX_SPEED)
 	else: 
 		motion.x = lerp(motion.x, 0 , FRICTION)
+
+
+func _input(event):
+	if Input.is_action_just_pressed("ui_select"):
+		toggle_torch()
+
+func toggle_torch():
+	$Torch.enabled = !$Torch.enabled

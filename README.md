@@ -78,6 +78,10 @@ tilemaps | game
 ### State 05.01.18 (after lection 47)
 ![autotile](docs/3/47_autotile.png)
 
+
+- Adding Light
+![lights](docs/3/49_light.png)
+
 # Overview
 
 Kurs gestartet am 19.08.2018
@@ -377,7 +381,7 @@ nice links :
 **05.01.19 - **
 Times: 
 - 05.01.19 11:00 - 12:30 => 1h 30m
-
+- 12.01.19 10:00 - 11:
 ### 447: Autotiling
 
 + levels can be made much faster
