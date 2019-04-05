@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Tilesets/Floors.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/Characters/Player.tscn" type="PackedScene" id=2]
@@ -7,10 +7,17 @@
 [ext_resource path="res://Scenes/Characters/Character.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/Characters/Guard.tscn" type="PackedScene" id=6]
 
+[sub_resource type="NavigationPolygon" id=1]
+
+vertices = PoolVector2Array( 243.884, 246.797, 251.008, 1017.3, 227.732, 590.222, 227.732, 427.182, 82.6824, 272.758, 79.6636, 202.723, 342.899, 208.761, -231.872, 350.038, -233.079, 208.157, -87.5754, 210.572, -87.5754, 272.758, -83.1076, 351.004, -235.977, -13.6613, -239.238, -237.653, 234.103, -234.634, -51.2296, -10.6426, 234.103, 72.6751, -48.8146, 109.987, 341.812, 108.779, 392.286, 72.0713, 326.477, -241.879, 502.772, -240.672, 504.583, -71.6214, 438.775, -72.2251, 390.475, -78.8664, 955.003, 138.795, 956.31, 250.419, -247.449, 1014.65, -246.845, 967.555, 205.968, 967.555, 205.365, 883.633, 109.297, 585.608, -236.581, 877.596, -82.0209, 601.078, -235.977, 600.474, 113.912, 422.568, 325.27, -80.6776, 442.397, 142.589 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 4, 5, 6, 0 ), PoolIntArray( 7, 8, 9, 10 ), PoolIntArray( 11, 7, 10, 4 ), PoolIntArray( 12, 13, 14, 15 ), PoolIntArray( 15, 14, 16, 17 ), PoolIntArray( 18, 17, 16, 19 ), PoolIntArray( 20, 21, 22, 23, 24 ), PoolIntArray( 25, 26, 0, 6 ), PoolIntArray( 1, 27, 28, 29 ), PoolIntArray( 2, 1, 29, 30 ), PoolIntArray( 31, 2, 30, 32, 33 ), PoolIntArray( 32, 34, 33 ), PoolIntArray( 35, 31, 33, 11, 4 ), PoolIntArray( 24, 36, 20 ), PoolIntArray( 19, 24, 23, 37 ), PoolIntArray( 18, 19, 37, 6 ), PoolIntArray( 0, 3, 35, 4 ), PoolIntArray( 37, 25, 6 ) ]
+outlines = [ PoolVector2Array( 955.003, 138.795, 956.31, 250.419, 243.884, 246.797, 251.008, 1017.3, -247.449, 1014.65, -246.845, 967.555, 205.968, 967.555, 205.365, 883.633, -236.581, 877.596, -235.977, 600.474, -82.0209, 601.078, -83.1076, 351.004, -231.872, 350.038, -233.079, 208.157, -87.5754, 210.572, -87.5754, 272.758, 82.6824, 272.758, 79.6636, 202.723, 342.899, 208.761, 341.812, 108.779, -48.8146, 109.987, -51.2296, -10.6426, -235.977, -13.6613, -239.238, -237.653, 234.103, -234.634, 234.103, 72.6751, 392.286, 72.0713, 390.475, -78.8664, 325.27, -80.6776, 326.477, -241.879, 502.772, -240.672, 504.583, -71.6214, 438.775, -72.2251, 442.397, 142.589 ), PoolVector2Array( 113.912, 422.568, 109.297, 585.608, 227.732, 590.222, 227.732, 427.182 ) ]
+
 [node name="Level1" type="Node2D" index="0"]
 
 [node name="Floors" type="TileMap" parent="." index="0"]
 
+visible = false
 mode = 0
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 64, 64 )
@@ -125,5 +132,55 @@ rotation = -3.1178
 
 position = Vector2( 795.823, 156.923 )
 rotation = -3.1178
+
+[node name="Navigation2D" type="Navigation2D" parent="." index="7"]
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Navigation2D" index="0"]
+
+visible = false
+navpoly = SubResource( 1 )
+enabled = true
+
+[node name="Destination" type="Node2D" parent="Navigation2D" index="1"]
+
+[node name="Destination1" type="Position2D" parent="Navigation2D/Destination" index="0"]
+
+position = Vector2( -203.143, -169.286 )
+
+[node name="Destination2" type="Position2D" parent="Navigation2D/Destination" index="1"]
+
+position = Vector2( 220.656, -168.119 )
+
+[node name="Destination3" type="Position2D" parent="Navigation2D/Destination" index="2"]
+
+position = Vector2( 214.818, 93.3992 )
+
+[node name="Destination4" type="Position2D" parent="Navigation2D/Destination" index="3"]
+
+position = Vector2( 877.952, 220.656 )
+
+[node name="Destination5" type="Position2D" parent="Navigation2D/Destination" index="4"]
+
+position = Vector2( 388.774, 215.986 )
+
+[node name="Destination6" type="Position2D" parent="Navigation2D/Destination" index="5"]
+
+position = Vector2( 14.0098, 456.488 )
+
+[node name="Destination7" type="Position2D" parent="Navigation2D/Destination" index="6"]
+
+position = Vector2( -149.439, 312.887 )
+
+[node name="Destination8" type="Position2D" parent="Navigation2D/Destination" index="7"]
+
+position = Vector2( 218.321, 834.755 )
+
+[node name="Destination9" type="Position2D" parent="Navigation2D/Destination" index="8"]
+
+position = Vector2( -148.271, 804.4 )
+
+[node name="Destination10" type="Position2D" parent="Navigation2D/Destination" index="9"]
+
+position = Vector2( 127.256, 993.534 )
 
 

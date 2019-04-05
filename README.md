@@ -74,13 +74,15 @@ tilemaps | game
 
 
 
-## Heis Meisters
+## Heist Meisters
 ### State 05.01.18 (after lection 47)
 ![autotile](docs/3/47_autotile.png)
 
 
 - Adding Light
 ![lights](docs/3/49_light.png)
+
+![navigation](docs/3/54_navigation.png)
 
 # Overview
 
@@ -390,3 +392,5 @@ Times:
 - very time consuming for setup
 
 - autotiling with 3x3 gives more precision
+
+
