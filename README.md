@@ -397,3 +397,11 @@ Times:
 - autotiling with 3x3 gives more precision
 
 
+### 457: Nightvision mode
+
+signals vs groups:
+- signals connect to a direct node
+- great for linking an event to a function in another node
+
+groups are broadcasts:
+- use `get_tree().call_group()` to call the function to a group and let each node figure out if its relevant
