@@ -1,0 +1,312 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://GFX/Tilesheet/tilesheet_complete.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 22, 20 )
+
+[sub_resource type="OccluderPolygon2D" id=12]
+
+closed = true
+cull_mode = 1
+polygon = PoolVector2Array( -18.5938, -13.0528, -15.4892, -17.7718, 16.1779, -17.0267, 19.0341, -13.4254, 22.2629, -12.1835, 22.5113, 7.18922, 23.7531, 9.30035, 22.2629, 15.3854, 20.6485, 19.4835, 16.5504, 20.3528, -16.1101, 21.843, -18.7179, 20.2286, -20.3323, 18.6142, -22.9402, 14.6403, -23.1886, 9.54872, -22.816, 8.18269, -22.3193, -10.8175 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 30, 20 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 22, 20 )
+
+[sub_resource type="OccluderPolygon2D" id=13]
+
+closed = true
+cull_mode = 1
+polygon = PoolVector2Array( 18.456, -18.0986, 20.4023, -15.179, 24.6194, -15.179, 26.0792, 18.5577, 22.9975, 21.4772, -22.5796, 22.126, -26.3101, 18.3955, -26.1479, -14.3681, -19.4978, -15.8278, -18.2003, -20.0449 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 90, 30 )
+
+[sub_resource type="OccluderPolygon2D" id=14]
+
+closed = true
+cull_mode = 1
+polygon = PoolVector2Array( -92.0332, -26.9897, 92.8495, -27.7682, 92.8495, 29.4481, -93.2009, 27.8912 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 50, 10 )
+
+[sub_resource type="OccluderPolygon2D" id=15]
+
+closed = true
+cull_mode = 1
+polygon = PoolVector2Array( -19.6674, -8.26893, -11.3796, -11.3078, 4.36725, -11.7682, 16.8911, -9.28189, 22.14, -7.25598, 49.3056, -6.51928, 49.5818, 3.05774, 39.6365, 3.05774, 38.5314, 8.12251, 20.7587, 7.75417, 12.9313, 12.2664, 5.65646, 13.4635, -4.381, 13.3715, -14.3264, 11.3456, -20.4962, 8.2146, -38.4531, 7.20164, -40.6632, 4.25487, -49.1352, 3.79443, -49.6877, -7.0718, -46.4646, -8.17685 )
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 90, 22 )
+
+[sub_resource type="OccluderPolygon2D" id=11]
+
+closed = true
+cull_mode = 1
+polygon = PoolVector2Array( -84.0824, -15.2664, -80.5548, -19.2805, 80.2536, -20.0104, 83.9028, -16.1179, 89.2549, -15.388, 89.7415, 17.9414, 85.1192, 22.3204, -86.6368, 22.1988, -89.3129, 19.0361, -90.1644, -14.4149 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 95, 30 )
+
+[sub_resource type="OccluderPolygon2D" id=10]
+
+closed = true
+cull_mode = 1
+polygon = PoolVector2Array( -91.9172, -28.2895, 93.3408, -28.2895, 92.9759, 29.2464, -93.2553, 28.7598 )
+
+[sub_resource type="CircleShape2D" id=8]
+
+custom_solver_bias = 0.0
+radius = 15.0
+
+[sub_resource type="OccluderPolygon2D" id=9]
+
+closed = true
+cull_mode = 1
+polygon = PoolVector2Array( -5.97241, -9.25633, 2.29186, -10.3276, 8.56658, -6.50157, 10.4031, -0.379894, 7.90339, 6.86409, 3.10808, 9.8229, -4.69706, 9.8229, -11.839, 5.28266, -11.788, -0.175838, -11.0228, -4.7671 )
+
+[node name="Furniture" type="Node2D"]
+
+[node name="OfficeChair" type="Sprite" parent="." index="0"]
+
+position = Vector2( 128, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1088, 1216, 64, 64 )
+_sections_unfolded = [ "Region" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="OfficeChair" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OfficeChair/StaticBody2D" index="0"]
+
+position = Vector2( 0.49367, 1.60731 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="OfficeChair" index="1"]
+
+occluder = SubResource( 12 )
+light_mask = 1
+
+[node name="Teppich" type="Sprite" parent="." index="1"]
+
+editor/display_folded = true
+position = Vector2( 256, 128 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1536, 1152, 64, 64 )
+_sections_unfolded = [ "Region" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Teppich" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Teppich/StaticBody2D" index="0"]
+
+shape = SubResource( 2 )
+
+[node name="ComfyChair" type="Sprite" parent="." index="2"]
+
+position = Vector2( 256, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1152, 1152, 64, 64 )
+_sections_unfolded = [ "Region" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="ComfyChair" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ComfyChair/StaticBody2D" index="0"]
+
+shape = SubResource( 3 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="ComfyChair" index="1"]
+
+occluder = SubResource( 13 )
+light_mask = 1
+
+[node name="Desk" type="Sprite" parent="." index="3"]
+
+editor/display_folded = true
+position = Vector2( 0, 192 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1280, 1088, 192, 64 )
+_sections_unfolded = [ "Region" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Desk" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Desk/StaticBody2D" index="0"]
+
+shape = SubResource( 4 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Desk" index="1"]
+
+occluder = SubResource( 14 )
+light_mask = 1
+
+[node name="TV" type="Sprite" parent="." index="4"]
+
+editor/display_folded = true
+position = Vector2( -192, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1152, 1216, 128, 64 )
+_sections_unfolded = [ "Region" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TV" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TV/StaticBody2D" index="0"]
+
+shape = SubResource( 5 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="TV" index="1"]
+
+occluder = SubResource( 15 )
+light_mask = 1
+
+[node name="BigSofa" type="Sprite" parent="." index="5"]
+
+editor/display_folded = true
+position = Vector2( -209.68, 95.6282 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 896, 1152, 192, 64 )
+_sections_unfolded = [ "Region" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="BigSofa" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BigSofa/StaticBody2D" index="0"]
+
+shape = SubResource( 6 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="BigSofa" index="1"]
+
+occluder = SubResource( 11 )
+light_mask = 1
+
+[node name="BigBrown" type="Sprite" parent="." index="6"]
+
+editor/display_folded = true
+position = Vector2( 2.63196, 100.015 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1280, 1024, 192, 64 )
+_sections_unfolded = [ "Region" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="BigBrown" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BigBrown/StaticBody2D" index="0"]
+
+shape = SubResource( 7 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="BigBrown" index="1"]
+
+occluder = SubResource( 10 )
+light_mask = 1
+
+[node name="Plant" type="Sprite" parent="." index="7"]
+
+editor/display_folded = true
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 1280, 448, 64, 64 )
+_sections_unfolded = [ "Region" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Plant" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plant/StaticBody2D" index="0"]
+
+shape = SubResource( 8 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Plant" index="1"]
+
+position = Vector2( 0.0510139, 0 )
+occluder = SubResource( 9 )
+light_mask = 1
+__meta__ = {
+"_edit_bone_": true,
+"_edit_group_": true
+}
+
+

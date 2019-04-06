@@ -75,14 +75,14 @@ tilemaps | game
 
 
 ## Heist Meisters
-### State 05.01.18 (after lection 47)
+### State 05.01.19 (after lection 47)
 ![autotile](docs/3/47_autotile.png)
-
-
-- Adding Light
 ![lights](docs/3/49_light.png)
 
+### State in April - 04.19
+
 ![navigation](docs/3/54_navigation.png)
+![furniture](docs/3/56_furniture.png)
 
 # Overview
 
@@ -383,7 +383,10 @@ nice links :
 **05.01.19 - **
 Times: 
 - 05.01.19 11:00 - 12:30 => 1h 30m
-- 12.01.19 10:00 - 11:
+- 12.01.19 10:00 - 11 => 1h
+- 04.04.19 1h
+- 05.04.19 1h 30m
+
 ### 447: Autotiling
 
 + levels can be made much faster
