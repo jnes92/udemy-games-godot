@@ -21,7 +21,6 @@ texture = ExtResource( 7 )
 region_rect = Rect2( 0, 0, 100, 100 )
 
 [node name="NumberPad" type="Popup"]
-visible = true
 margin_right = 40.0
 margin_bottom = 40.0
 rect_min_size = Vector2( 300, 400 )
@@ -76,10 +75,10 @@ margin_right = 280.0
 margin_bottom = 380.0
 
 [node name="ButtonGrid" type="GridContainer" parent="VSplitContainer/ButtonContainer"]
-margin_left = 72.0
-margin_top = 42.0
-margin_right = 208.0
-margin_bottom = 226.0
+margin_left = 140.0
+margin_top = 134.0
+margin_right = 140.0
+margin_bottom = 134.0
 custom_constants/vseparation = 8
 custom_constants/hseparation = 8
 columns = 3
