@@ -3,8 +3,10 @@ extends Popup
 onready var display = $VSplitContainer/DisplayContainer/Display
 onready var light = $VSplitContainer/ButtonContainer/ButtonGrid/Light
 
-var secret_code = [1,2,3]
+var secret_code = []
 var guessed_code = []
+
+signal code_correct
 
 func _ready():
 	connect_buttons()
@@ -23,12 +25,14 @@ func _on_Button_pressed(buttonIdentifier):
 		
 func check_guess():
 	if guessed_code == secret_code:
+		play_sfx("res://SFX/threeTone1.ogg")
 		light.texture = load(Global.green_light)
 		$Timer.start()
 	else:
 		reset_lock()
 	
 func enter(number):
+	play_sfx("res://SFX/twoTone1.ogg")
 	guessed_code.append(number)
 	update_display()
 	
@@ -46,3 +50,9 @@ func update_display():
 func _on_Timer_timeout():
 	hide()
 	reset_lock()
+	emit_signal("code_correct")
+
+func play_sfx(toneUrl):
+	var tone = load(toneUrl)
+	$AudioStreamPlayer.stream = tone
+	$AudioStreamPlayer.play()

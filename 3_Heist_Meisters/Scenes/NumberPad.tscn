@@ -38,6 +38,7 @@ patch_margin_right = 10
 patch_margin_bottom = 10
 
 [node name="VSplitContainer" type="VSplitContainer" parent="."]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 10.0
@@ -229,5 +230,7 @@ text = "Ok"
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
