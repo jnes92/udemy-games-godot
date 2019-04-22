@@ -5,9 +5,12 @@ export var code_length = 4
 var can_click = false
 var secret_code 
 
+signal combination
+
 func _ready():
 	$Light2D.enabled = true
 	generate_secret_code()
+	emit_signal("combination", secret_code)
 
 func generate_secret_code():
 	var code_generator = get_tree().get_root().find_node("CodeGenerator", true, false)
