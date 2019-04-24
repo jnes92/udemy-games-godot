@@ -228,6 +228,6 @@ text = "TV Room"
 [node name="GUI" parent="." instance=ExtResource( 16 )]
 
 [connection signal="timeout" from="Player/VisionModeTimer" to="Player" method="_on_VisionModeTimer_timeout"]
-[connection signal="combination" from="Computers/Computer" to="DoorsLocked/LockedDoor2" method="_on_Computer_combination"]
 [connection signal="combination" from="Computers/Computer" to="DoorsLocked/LockedDoor" method="_on_Computer_combination"]
+[connection signal="combination" from="Computers/Computer" to="DoorsLocked/LockedDoor2" method="_on_Computer_combination"]
 [connection signal="combination" from="Computers/Computer2" to="DoorsLocked/LockedDoor3" method="_on_Computer_combination"]
