@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Scripts/Navigation2D.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/Destination.gd" type="Script" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://Tilesets/Furniture.tres" type="TileSet" id=12]
 [ext_resource path="res://Scenes/Computer.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scenes/CodeGenerator.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Theme.tres" type="Theme" id=15]
 
 [sub_resource type="NavigationPolygon" id=1]
 vertices = PoolVector2Array( 210.223, 244.869, 251.008, 1017.3, 227.732, 590.222, -231.872, 350.038, -207.841, 266.643, -138.163, 318.901, -83.1076, 351.004, -49.6153, 315.998, 82.6824, 272.758, 79.6636, 202.723, 342.899, 208.761, 326.477, -241.879, 502.772, -240.672, 504.583, -71.6214, 438.775, -72.2251, 390.475, -78.8664, 955.003, 138.795, 956.31, 250.419, 36.0297, -62.8719, 36.0297, -237.065, 234.103, -234.634, 234.103, 72.6751, -247.449, 1014.65, -246.845, 967.555, 205.968, 967.555, 205.365, 883.633, 109.297, 585.608, -236.581, 877.596, -231.066, 564.223, -84.4539, 558.417, 113.912, 422.568, 341.812, 108.779, -48.8146, 109.987, -51.2296, -10.6426, 325.27, -80.6776, 392.286, 72.0713, 442.397, 142.589, 227.732, 427.182 )
@@ -166,15 +167,59 @@ tile_data = PoolIntArray( -131073, 1610612742, 0, -196603, 1610612743, 0, -65537
 [node name="Computer" parent="Computers" instance=ExtResource( 13 )]
 position = Vector2( -25.9289, 221.447 )
 rotation = 1.5708
+lock_group = "WZ"
 
 [node name="Computer2" parent="Computers" instance=ExtResource( 13 )]
 position = Vector2( 351.092, 9.81094 )
 rotation = 1.5708
 code_length = 6
+lock_group = "Floor"
 
 [node name="CodeGenerator" parent="." instance=ExtResource( 14 )]
 
+[node name="Map Labels" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="Map Labels" groups=[
+"code_labels",
+]]
+margin_left = -123.861
+margin_top = 985.036
+margin_right = -27.861
+margin_bottom = 1008.04
+theme = ExtResource( 15 )
+text = "OUTDOOR"
+
+[node name="Label2" type="Label" parent="Map Labels" groups=[
+"code_labels",
+]]
+margin_left = -64.3688
+margin_top = -236.994
+margin_right = 31.6312
+margin_bottom = -213.994
+theme = ExtResource( 15 )
+text = "Sleeping"
+
+[node name="Label4" type="Label" parent="Map Labels" groups=[
+"code_labels",
+]]
+margin_left = 812.78
+margin_top = -233.272
+margin_right = 917.78
+margin_bottom = -203.272
+theme = ExtResource( 15 )
+text = "Cooking"
+
+[node name="Label3" type="Label" parent="Map Labels" groups=[
+"code_labels",
+]]
+margin_left = -26.3326
+margin_top = 519.826
+margin_right = 69.6674
+margin_bottom = 542.826
+theme = ExtResource( 15 )
+text = "TV Room"
+
 [connection signal="timeout" from="Player/VisionModeTimer" to="Player" method="_on_VisionModeTimer_timeout"]
-[connection signal="combination" from="Computers/Computer" to="DoorsLocked/LockedDoor2" method="_on_Computer_combination"]
 [connection signal="combination" from="Computers/Computer" to="DoorsLocked/LockedDoor" method="_on_Computer_combination"]
+[connection signal="combination" from="Computers/Computer" to="DoorsLocked/LockedDoor2" method="_on_Computer_combination"]
 [connection signal="combination" from="Computers/Computer2" to="DoorsLocked/LockedDoor3" method="_on_Computer_combination"]

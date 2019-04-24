@@ -10,6 +10,7 @@ var destinations
 
 const GROUP_INTERFACE_ID = "interface"
 const GROUP_NPC_ID = "npc"
+const GROUP_CODE_LABELS_ID = "code_labels"
 
 ## Asset links - MUST BE CHANGED MANUALLY
 var sfx_nightvision_on = "res://SFX/nightvision.wav"

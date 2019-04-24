@@ -1,6 +1,7 @@
 extends Area2D
 
 export var code_length = 4
+export var lock_group = "NOT SET"
 
 var can_click = false
 var secret_code 
@@ -10,7 +11,9 @@ signal combination
 func _ready():
 	$Light2D.enabled = true
 	generate_secret_code()
-	emit_signal("combination", secret_code)
+	emit_signal("combination", secret_code, lock_group)
+	$Label.rect_rotation = - rotation_degrees
+	$Label.text = lock_group
 
 func generate_secret_code():
 	var code_generator = get_tree().get_root().find_node("CodeGenerator", true, false)
